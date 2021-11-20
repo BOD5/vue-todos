@@ -16,7 +16,7 @@ button {
   border-radius: 50px;
   transition: .5s;
   background-color: transparent;
-  border-width: 1px;
+  border: 1px solid #f2f7f6;
   &:hover {
     background-color: lightgreen;
   }

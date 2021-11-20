@@ -81,6 +81,9 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    h3 {
+        word-break: break-word;
+    }
     .todo-head, .controls{
       margin: 15px;
       width: 100%;
