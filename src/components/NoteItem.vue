@@ -46,7 +46,8 @@ export default {
     border-radius: 25px;
     background-color: transparent;
     transition: .3s;
-    width: 250px;
+    min-width: 100px;
+    max-width: 700px;
     margin: 7px;
     padding: 7px;
     &:hover {
@@ -62,6 +63,7 @@ export default {
       margin: 5px;
       h3 {
         margin: 0px;
+        word-break: break-word;
       }
       button {
         &:hover {
@@ -76,6 +78,7 @@ export default {
       margin: 5px;
       p {
         margin: 0px 10px;
+        word-break: break-word;
       }
     }
   }

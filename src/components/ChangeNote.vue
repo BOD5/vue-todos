@@ -23,14 +23,13 @@
 <script>
 import CustomeBtn from './UI/CustomeBtn.vue';
 import CustomeInput from './UI/CustomeInput.vue';
-import { getNoteById } from '../api';
 
 export default {
   components: { CustomeInput, CustomeBtn },
   name: 'change-note',
   props: {
-    noteId: {
-      type: Number,
+    note: {
+      type: Object,
     },
   },
   emits: {
@@ -38,8 +37,8 @@ export default {
     cancel: null,
   },
   created() {
-    if (this.noteId !== null) {
-      this.newNote = getNoteById(this.noteId);
+    if (this.note !== null) {
+      this.newNote = this.note;
     }
   },
   data() {
@@ -81,6 +80,9 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    h3 {
+      word-break: break-word;
+    }
     .todo-head, .controls{
       margin: 15px;
       width: 100%;
@@ -89,6 +91,7 @@ export default {
       justify-content: space-between;
       p {
         margin: 0px;
+        word-break: break-word;
       }
     }
     .todo-list {
