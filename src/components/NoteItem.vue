@@ -42,7 +42,7 @@ export default {
 
 <style lang="scss" scoped>
   .note {
-    border: 1px solid gray;
+    border: 1px solid #f2f7f6;
     border-radius: 25px;
     background-color: transparent;
     transition: .3s;
